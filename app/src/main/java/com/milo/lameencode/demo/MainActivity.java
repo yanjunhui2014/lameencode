@@ -1,4 +1,4 @@
-package com.milo.lameencode;
+package com.milo.lameencode.demo;
 
 import android.Manifest;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.milo.lameencode.Mp3Encode;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
