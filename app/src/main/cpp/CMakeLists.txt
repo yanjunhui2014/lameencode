@@ -13,7 +13,10 @@ include_directories(lame)
 aux_source_directory(lame SRC_LIST)
 
 #将前面目录下所有的文件都添加进去
-add_library(lamemp3 SHARED native-lib.cpp ${SRC_LIST})
+add_library(lamemp3
+        SHARED
+        native-lib.cpp
+        ${SRC_LIST})
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
