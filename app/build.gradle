@@ -28,4 +28,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation project(":libencode")
+//    implementation 'com.milo:lameencode:0.0.1'
 }

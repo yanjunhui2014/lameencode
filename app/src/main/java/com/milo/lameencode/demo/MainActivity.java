@@ -6,6 +6,7 @@ import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,8 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v == mBtnPcm2Mp3) {
             Mp3Encode.pcm2Mp3(PCM, PCM2MP3, 44100, 1, 44100, 0, 3, 3);
+            Toast.makeText(this, "转化成功", Toast.LENGTH_SHORT).show();
         } else if (v == mBtnWav2Mp3) {
             Mp3Encode.wav2Mp3(WAV, WAV2MP3, 16000, 1, 16000, 0, 3, 3);
+            Toast.makeText(this, "转化成功", Toast.LENGTH_SHORT).show();
         }
     }
 
